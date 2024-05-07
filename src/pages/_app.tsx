@@ -51,7 +51,7 @@ const httpLink = createHttpLink({
 
 const authLink = setContext((_, {headers}) => {
   // const token = Cookie.get(COOKIE_ACCESS_TOKEN);
-  const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5ydSIsInN1YiI6MSwibmFtZSI6ItCc0LXRgNC70LjQvtC9Iiwicm9sZXMiOlsiVVNFUiJdLCJpYXQiOjE3MTQ5OTE1NTAsImV4cCI6MTcxNDk5NTE1MH0.Giy8hSgDWJqeQN-Rm0mcMn7j5p6fetW1hwue6h9x2kA';
+  const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxMjM0QHRlc3Q1LnJ1Iiwic3ViIjo0OCwibmFtZSI6ItCQ0LvQtdC60YHQtdC5INCQ0LvQtdC60YHQtdC10LLQuNGHICIsInJvbGVzIjpbIlVTRVIiXSwiaWF0IjoxNzE1MDY0OTI5LCJleHAiOjE3MTUwNjg1Mjl9.JmHne7n23qUgH1s0hnfysUO7fEuGW9J5XZ-YLteNyvQ';
 
   // Кастомизация заголовков под конкретные запросы
   //
