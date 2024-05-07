@@ -41,6 +41,7 @@ export default function Home() {
   return (
     <div>
       <Link href="/cart">В корзину</Link>
+      <Link href={'/form'}>Авторизация</Link>
       {queryData.products.products.map((el:any)=>(
         <div key={el.id}>
           <Product
@@ -64,7 +65,7 @@ export default function Home() {
               }
             }
           )}
-           
+
           />
         </div>
       ))}

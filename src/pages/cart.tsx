@@ -32,7 +32,7 @@ mutation removeFromCart($id_prod: RemoveFromCartInput!){
 function Cart(){
     const {loading, error, data} = useQuery(GET_CART_PRODUCTS)
     const [removeFromCart, {loading: mutationLoading, error: mutationError, data: mutationData}] = useMutation(REMOVE_ONE_PRODUCT)
-    
+
     if (loading) return <p>Loading...</p>
     if (error) return <p>Error : {error.message}</p>
     if (!loading) {
@@ -41,6 +41,7 @@ function Cart(){
     return(
     <div>
       <Link href="/">К продуктам</Link>
+      <Link href={'/form'}>К авторизации</Link>
       {data.cart.CartProducts.map((el:any)=>(
         <div key={el.product_id}>
           
